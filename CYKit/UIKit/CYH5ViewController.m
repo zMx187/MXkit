@@ -183,7 +183,7 @@ API_AVAILABLE(ios(8.0))
     } else if ([object isEqual:self.webView] && [keyPath isEqualToString:@"title"]) { // 标题
         if (![self.webView.title isEqualToString:@"123"]) {
             if (self.navigationController.viewControllers.count!=1) {
-                self .title = self.webView.title;
+                self.title = self.titleText?:self.webView.title;
             }
         }
     } else { // 其他
