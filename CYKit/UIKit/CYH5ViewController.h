@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CYH5ViewController : CYBaseViewController
 
 @property (nonatomic, strong) NSString *urlString;
-
+@property (nonatomic, strong) NSString *titleText;
 - (instancetype) initWithURL:(NSURL *)url;
 
 - (void) registeWithName:(NSString *)jsName
